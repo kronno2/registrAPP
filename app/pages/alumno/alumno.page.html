@@ -14,7 +14,7 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Login</ion-title>
+      <ion-title size="large" class="title">Login</ion-title>
     </ion-toolbar>
   </ion-header>
   <ion-list>
@@ -28,24 +28,27 @@
       <ion-input type="password "></ion-input>
     </ion-item>
   </ion-list>
-
-  <ion-button
-    (click)="Saludar()"
-    expand="block"
-    fill="solid"
-    color="warning"
-    shape="round"
-  >
-    Ingresar
-  </ion-button>
-  <div class="mt-15">
+  <div>
+    <br />
+    <br />
     <ion-button
-      routerLink="/registro"
+      (click)="Saludar()"
       expand="block"
-      color="primary"
+      fill="solid"
+      color="warning"
       shape="round"
     >
-      Registrarse
+      Ingresar
     </ion-button>
+    <div class="mt-15">
+      <ion-button
+        routerLink="/registro"
+        expand="block"
+        color="primary"
+        shape="round"
+      >
+        Registrarse
+      </ion-button>
+    </div>
   </div>
 </ion-content>

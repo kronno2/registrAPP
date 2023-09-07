@@ -1,11 +1,13 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/"
+      <ion-back-button
+        defaultHref="/"
         text="back"
-        color="primary"></ion-back-button>
+        color="primary"
+      ></ion-back-button>
     </ion-buttons>
-    <ion-title>Registro</ion-title>
+    <ion-title class="title">Registro</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -13,8 +15,6 @@
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Formulario</ion-title>
-    
-      
     </ion-toolbar>
   </ion-header>
   <ion-list>
@@ -30,7 +30,12 @@
 
     <ion-item>
       <ion-label position="floating">Edad: </ion-label>
-      <ion-input type="number" min="1" max="100" placeholder="Digite su edad.."></ion-input>
+      <ion-input
+        type="number"
+        min="1"
+        max="100"
+        placeholder="Digite su edad.."
+      ></ion-input>
     </ion-item>
 
     <ion-item>
@@ -42,17 +47,30 @@
       <ion-label position="floating">Password: </ion-label>
       <ion-input type="password" placeholder="Digite su password.."></ion-input>
     </ion-item>
-
   </ion-list>
 
-  <ion-button (click)="Saludar()" expand="block" fill="solid" color="primary" shape="round">
-    Registrarse
-  </ion-button>
-<div class="mt-5">
-  
-
-  <ion-button  routerLink="/inicio" expand="block" fill="solid" color="warning" shape="round">
-    Volver al inicio
-  </ion-button>
-</div>
+  <div>
+    <br />
+    <br />
+    <ion-button
+      (click)="Saludar()"
+      expand="block"
+      fill="solid"
+      color="primary"
+      shape="round"
+    >
+      Registrarse
+    </ion-button>
+    <div class="mt-5">
+      <ion-button
+        routerLink="/inicio"
+        expand="block"
+        fill="solid"
+        color="warning"
+        shape="round"
+      >
+        Volver al inicio
+      </ion-button>
+    </div>
+  </div>
 </ion-content>
